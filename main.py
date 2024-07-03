@@ -11,6 +11,12 @@ def minmax(numbers):
     ########################################
     # Do not delete the return statement
     ########################################
+    minval = maxval = numbers[0]
+    for num in numbers:
+        if num > maxval:
+            maxval = num
+        elif num < minval:
+            minval = num
     return minval, maxval
 
 
